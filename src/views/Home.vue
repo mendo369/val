@@ -58,7 +58,7 @@
       <div class="images">
         <div class="image-editorial">
           <img
-            src="../assets/images/identidad/levael-03.jpg"
+            src="../assets/images/identidad/Levael-03.jpg"
             alt=""
           />
         </div>
