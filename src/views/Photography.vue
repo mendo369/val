@@ -14,7 +14,7 @@
     <div class="images">
       <ul>
         <li class="image">
-          <img src="../assets/images/fotos/IMG_4163.jpg" alt="" title="Competencia 2--1"/>
+          <img src="../assets/images/fotos/IMG_4163.jpg" alt=""/>
         </li>
         <li class="image">
           <img

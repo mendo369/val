@@ -136,18 +136,18 @@ nav {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  gap: 5px;
 }
 
 .hamburger .line {
   width: 25px;
   height: 3px;
   background-color: black;
-  margin: 4px 0;
-  transition: all 0.3s;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .hamburger .line.open:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .hamburger .line.open:nth-child(2) {
@@ -155,7 +155,7 @@ nav {
 }
 
 .hamburger .line.open:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .nav-links {
@@ -194,6 +194,7 @@ nav {
 
   .nav-links.open {
     display: flex;
+    z-index: 1000;
   }
 
   .nav-links ul {
