@@ -28,7 +28,7 @@
     </div>
     <div class="education">
       <div class="text">
-        <div class="title"><h1>FORMACIÓN ACADÉMICA</h1></div>
+        <div class="title title-visible"><h1>FORMACIÓN ACADÉMICA</h1></div>
         <div class="description">
           <p>Fundación Univarsitarí Los Libertadores Diseño Gráfico</p>
           <span>Sexto Semestre</span>
@@ -48,6 +48,9 @@
       <div class="image">
         <img src="../assets/images/about/IMG_1604.jpg" alt="" />
       </div>
+      <div class="title title-mobile">
+          <h1>FORMACIÓN ACADÉMICA</h1>
+        </div>
     </div>
     <div class="skills">
       <div class="image image-hiden" style="width: 100vw; height: 200px;">
@@ -114,6 +117,11 @@ span{
 @media (max-width: 400px) {
   .description p {
     padding: 10px;
+  }
+
+  .education{
+    flex-direction: column-reverse;
+    align-items: end;
   }
 
   .title-visible{
