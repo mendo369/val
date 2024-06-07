@@ -1,8 +1,12 @@
-<script setup></script>
+<script setup>
+import Slider from '../components/Slider.vue'
+</script>
 
 <template>
   <section class="home">
-    <div class="slider"></div>
+    <div class="slider">
+      <Slider/>
+    </div>
     <div class="photographs section-home">
       <div class="title"><h1>FOTOGRAFÍAS</h1></div>
       <div class="description">
@@ -16,10 +20,10 @@
         <div class="image">
           <img src="../assets/images/fotos/IMG_2395.jpg" alt="img1" />
         </div>
-        <div class="image"><img src="" alt="img2" /></div>
-        <div class="image"><img src="" alt="img3" /></div>
+        <div class="image"><img src="../assets/images/fotos/IMG_9066.jpg" alt="img2" /></div>
+        <div class="image"><img src="../assets/images/fotos/IMG_4722-2.jpg" alt="img3" /></div>
       </div>
-      <div class="button">Ver</div>
+      <div class="button" @click="()=>$router.push('/fotografia')">Ver</div>
     </div>
     <div class="editorial section-home">
       <div class="title"><h1>EDITORIAL</h1></div>
@@ -43,7 +47,7 @@
           />
         </div>
       </div>
-      <div class="button">Ver</div>
+      <div class="button"  @click="()=>$router.push('/editorial')">Ver</div>
     </div>
     <div class="branding section-home">
       <div class="title"><h1>IDENTIDAD DE MARCA</h1></div>
@@ -66,7 +70,7 @@
           <img src="../assets/images/identidad/PORTADABOLI.png" alt="" />
         </div>
       </div>
-      <div class="button">Ver</div>
+      <div class="button" @click="()=>$router.push('/identidad')">Ver</div>
     </div>
   </section>
 </template>
@@ -79,8 +83,10 @@
 }
 
 .slider {
-  border: 2px solid green;
   min-height: 300px;
+  max-height: 400px;
+  overflow: hidden;
+  width: 100%;
 }
 
 .section-home {
@@ -148,9 +154,12 @@
 }
 
 @media (max-width: 400px) {
+  .slider{
+    height: 300px;
+  }
+
   .image-editorial img{
     object-fit: initial;
-    
   }
 }
 </style>
