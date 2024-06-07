@@ -39,3 +39,8 @@ a{
 }
 
 
+.image:hover img,.image-editorial:hover img{
+opacity: 0.5;
+}
+
+

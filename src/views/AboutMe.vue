@@ -3,11 +3,14 @@
 <template>
   <section class="about-me">
     <div class="me">
+      <div class="title title-mobile">
+          <h1>ABOUT ME</h1>
+        </div>
       <div class="image">
         <img src="../assets/images/about/val.jpg" alt="" />
       </div>
       <div class="text">
-        <div class="title">
+        <div class="title title-visible">
           <h1>ABOUT ME</h1>
         </div>
         <div class="description">
@@ -47,6 +50,9 @@
       </div>
     </div>
     <div class="skills">
+      <div class="image image-hiden" style="width: 100vw; height: 200px;">
+        <img src="../assets/images/about/IMG_1917.jpg" alt="" />
+      </div>
       <div class="image">
         <img src="../assets/images/about/Val-03.png" alt="" />
       </div>
@@ -57,9 +63,20 @@
 <style scoped>
 .about-me {
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 span{
     font-weight: bold;
+}
+
+.title-mobile{
+  display: none;
+}
+
+.image-hiden{
+  display: none;
 }
 
 .me,
@@ -71,8 +88,12 @@ span{
 }
 
 .image {
-  width: 300px;
-  height: 350px;
+  width: 40vw;
+  height: 50vw;
+}
+
+.text{
+  width: 55vw;
 }
 
 .skills .image {
@@ -94,5 +115,38 @@ span{
   .description p {
     padding: 10px;
   }
+
+  .title-visible{
+    display: none;
+  }
+
+  .title-mobile{
+    display: initial;
+    width: 100vw;
+  }
+  .text{
+    width: 100%;
+  }
+
+  .image-hiden{
+  display: block;
+}
+
+  .me{
+    flex-direction: column;
+  }
+  
+
+  .education .image{
+    width: 90vw;
+    margin-right: -10vw;
+  }
+
+  .skills .image {
+  width: 90vw;
+  height: auto;
+}
+
+
 }
 </style>
