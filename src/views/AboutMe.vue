@@ -4,7 +4,7 @@
   <section class="about-me">
     <div class="me">
       <div class="image">
-        <img src="../assets/images/about/val.JPG" alt="" />
+        <img src="../assets/images/about/IMG_1604.JPG" alt="" />
       </div>
       <div class="text">
         <div class="title">
