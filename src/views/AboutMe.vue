@@ -43,7 +43,7 @@
         </div>
       </div>
       <div class="image">
-        <img src="../assets/images/about/IMG_1604.jpg" alt="" />
+        <img src="../assets/images/about/IMG_1604.JPG" alt="" />
       </div>
     </div>
     <div class="skills">
