@@ -85,7 +85,12 @@ const isMobileMenuOpen = ref(false);
 const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value;
 };
+
+const closeMobileMenu = () => {
+  isMobileMenuOpen.value = false;
+};
 </script>
+
 
 <template>
   <nav>
@@ -98,24 +103,25 @@ const toggleMobileMenu = () => {
     <div :class="['nav-links', { 'open': isMobileMenuOpen }]">
       <ul>
         <li class="nav-link">
-          <router-link to="/" active-class="active">Home</router-link>
+          <router-link to="/" active-class="active" @click="closeMobileMenu">Home</router-link>
         </li>
         <li class="nav-link">
-          <router-link to="/fotografia" active-class="active">Fotografía</router-link>
+          <router-link to="/fotografia" active-class="active" @click="closeMobileMenu">Fotografía</router-link>
         </li>
         <li class="nav-link">
-          <router-link to="/editorial" active-class="active">Editorial</router-link>
+          <router-link to="/editorial" active-class="active" @click="closeMobileMenu">Editorial</router-link>
         </li>
         <li class="nav-link">
-          <router-link to="/identidad-de-marca" active-class="active">Identidad de marca</router-link>
+          <router-link to="/identidad-de-marca" active-class="active" @click="closeMobileMenu">Identidad de marca</router-link>
         </li>
         <li class="nav-link">
-          <router-link to="/about-me" active-class="active">About me</router-link>
+          <router-link to="/about-me" active-class="active" @click="closeMobileMenu">About me</router-link>
         </li>
       </ul>
     </div>
   </nav>
 </template>
+
 
 <style scoped>
 nav {
