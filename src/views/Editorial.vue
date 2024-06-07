@@ -12,13 +12,16 @@
       </p>
     </div>
     <div class="images">
-        <div class="image">
+        <div class="image" id="pliego-first">
             <img src="../assets/images/editorial/PROYECTO1/pliego-09.jpg" alt="">
+        </div>
+        <div class="image" id="pliego">
+            <img src="../assets/images/editorial/PROYECTO1/pliego-07.jpg" alt="">
         </div>
         <div class="image">
             <img src="../assets/images/editorial/PROYECTO1/pliego-04.jpg" alt="">
         </div>
-        <div class="image" style="width: 70vw;">
+        <div class="image" id="vw">
             <img src="../assets/images/editorial/PROYECTO1/pliego-02.jpg" alt="">
         </div>
         <div class="image">
@@ -42,6 +45,14 @@
   align-items: center;
 }
 
+#pliego{
+  display: none;
+}
+
+#vw{
+  width: 60vw;
+}
+
 .images{
     width: 100%;
     height: 100%;
@@ -59,5 +70,22 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media(max-width:400px){
+  .image{
+    width: 98vw;
+  }
+
+  #vw{
+    width: 98vw;
+  }
+
+  #pliego{
+  display: initial;
+}
+  #pliego-first{
+  display: none;
+}
 }
 </style>

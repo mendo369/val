@@ -14,10 +14,14 @@
     <div class="images">
       <ul>
         <li class="image">
-          <img src="../assets/images/fotos/IMG_4163.jpg" alt="" />
+          <img src="../assets/images/fotos/IMG_4163.jpg" alt="" title="Competencia 2--1"/>
         </li>
         <li class="image">
-          <img src="../assets/images/fotos/IMG_5212.jpg" alt="" style="object-fit: fill;"/>
+          <img
+            src="../assets/images/fotos/IMG_5212.jpg"
+            alt=""
+            style="object-fit: fill"
+          />
         </li>
         <li class="image">
           <img src="../assets/images/fotos/IMG_2439.jpg" alt="" />
@@ -29,7 +33,11 @@
           <img src="../assets/images/fotos/IMG_2036.jpg" alt="" />
         </li>
         <li class="image">
-          <img src="../assets/images/fotos/IMG_5621.jpg" alt="" style="object-fit: fill;"/>
+          <img
+            src="../assets/images/fotos/IMG_5621.jpg"
+            alt=""
+            style="object-fit: fill"
+          />
         </li>
         <li class="image">
           <img src="../assets/images/fotos/IMG_9066.jpg" alt="" />
@@ -44,15 +52,15 @@
           <img src="../assets/images/fotos/IMG_4722-2.jpg" alt="" />
         </li>
       </ul>
-      </div>
-        <div class="main-img">
+    </div>
+    <!-- <div class="main-img">
           <img src="../assets/images/fotos/IMG_9066.jpg" alt="">
           <div class="img-text">
             <h3>Fotografía Deportiva</h3>
             <p>Carrera de Ciclismo Mtb, en campeonato distrital.</p>
             <p>Valpics 2023</p>
           </div>
-        </div>
+        </div> -->
   </section>
 </template>
 
@@ -80,8 +88,8 @@
 }
 
 .image {
-  width: 500px;
-  height: 500px;
+  width: 45vw;
+  height: 45vw;
   overflow: hidden;
 }
 
@@ -91,14 +99,14 @@
   object-fit: cover;
 }
 
-.main-img{
+.main-img {
   width: 90vw;
   /* height: 600px; */
   /* overflow: hidden; */
   margin-bottom: 150px;
 }
 
-.main-img img{
+.main-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;

@@ -157,6 +157,10 @@ import Slider from '../components/Slider.vue'
 }
 
 @media (max-width: 400px) {
+  .description p{
+    font-size: 14px;
+  }
+
   .slider{
     height: 300px;
   }
