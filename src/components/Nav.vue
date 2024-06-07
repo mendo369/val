@@ -2,7 +2,7 @@
 
 <template>
   <nav>
-    <div class="logo"><span>Val.</span></div>
+    <div class="logo" @click="()=>$router.push('/')"><span>Val.</span></div>
     <div class="nav-links">
       <ul>
         <li class="nav-link">

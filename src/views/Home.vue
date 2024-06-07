@@ -70,7 +70,7 @@ import Slider from '../components/Slider.vue'
           <img src="../assets/images/identidad/PORTADABOLI.png" alt="" />
         </div>
       </div>
-      <div class="button" @click="()=>$router.push('/identidad')">Ver</div>
+      <div class="button" @click="()=>$router.push('/identidad-de-marca')">Ver</div>
     </div>
   </section>
 </template>
