@@ -145,7 +145,6 @@ span{
 
   .education .image{
     width: 90vw;
-    margin-right: -10vw;
   }
 
   .skills .image {
