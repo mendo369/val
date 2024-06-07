@@ -84,7 +84,7 @@ import Slider from '../components/Slider.vue'
 
 .slider {
   min-height: 300px;
-  max-height: 400px;
+  max-height: 500px;
   overflow: hidden;
   width: 100%;
 }
@@ -124,7 +124,6 @@ import Slider from '../components/Slider.vue'
 .image {
   width: 350px;
   height: 400px;
-  background-color: rgb(152, 236, 236);
   overflow: hidden;
 }
 
@@ -133,12 +132,12 @@ import Slider from '../components/Slider.vue'
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .image-editorial {
-  width: 500px;
-  height: 350px;
-  background-color: rgb(152, 236, 236);
+  width: 600px;
+  height: 400px;
   overflow: hidden;
 }
 
@@ -153,13 +152,29 @@ import Slider from '../components/Slider.vue'
   justify-content: center;
 }
 
+.button:hover{
+  background-color: #e2e2e2;
+}
+
 @media (max-width: 400px) {
   .slider{
     height: 300px;
   }
 
-  .image-editorial img{
-    object-fit: initial;
+  .image-editorial{
+    height: auto;
   }
+
+  .image-editorial img{
+    object-fit: cover;
+  }
+
+  .image img,
+.image-editorial img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 }
 </style>

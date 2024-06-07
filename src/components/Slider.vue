@@ -15,11 +15,11 @@ const modules = [Navigation];
       <img src="../assets/images/fotos/slide/IMG_1363.jpg" alt=""></swiper-slide>
       <!-- image  -->
     ><swiper-slide>
-      <img src="../assets/images/fotos/slide/IMG_1699.jpg" alt="">
+      <img src="../assets/images/fotos/slide/IMG_1699.jpg" alt="" style="object-position: top;">
       <!-- image -->
     </swiper-slide>
     <swiper-slide>
-      <img src="../assets/images/fotos/slide/IMG_2425.jpg" alt="">
+      <img src="../assets/images/fotos/slide/IMG_2425.jpg" alt="" style="object-position: top;">
       <!-- image -->
     </swiper-slide>
   </swiper>
@@ -28,7 +28,7 @@ const modules = [Navigation];
 <style scoped>
 .swiper {
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 
 .swiper-slide {
@@ -43,10 +43,10 @@ const modules = [Navigation];
 }
 
 .swiper-slide img {
-  display: block;
+  display: block; 
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .swiper-button-next{
